@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>.</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <table id="trangchu"></table>
+    <h1>
+        MealBox.ai <br>
+        Trợ lý lập kế hoạch bữa ăn thông minh
+    </h1>
+    <hr>
+    <div>
+        <ul>
+            <li><a href="#part1">Mục tiêu trang web</a></li> 
+            <li><a href="#part2">Đối tượng người dùng</a></li> 
+            <li><a href="#part3">Tính năng chi tiết (MVP - Phiên bản đầu)</a></li> 
+            <li><a href="#part4">Thông số kỹ thuật & công nghệ đề xuất</a></li> 
+            <li><a href="#part5">Chi phí triển khai MVP (ước tính 3 tháng)</a></li> 
+            <li><a href="#part6">Lộ trình phát triển (Timeline 3 tháng)</a></li> 
+            <li><a href="#part7">Chiến lược phát triển lâu dài</a></li>
+        </ul>
+        
+    </div>
+    <ol>
+        <table id="part1"></table>
+        <h2><li>Mục tiêu trang web:</li></h2>
+        <p>MealBox.ai là một nền tảng giúp người dùng lập kế hoạch bữa ăn cá nhân hóa bằng AI, theo dõi dinh dưỡng, tối ưu chi tiêu, và dễ dàng đặt mua nguyên liệu.</p>
+        <table id="part2"></table>
+        <h2><li>Đối tượng người dùng:</li></h2>
+        <ul style="list-style: disc;">
+            <li>Người bận rộn (dân văn phòng, sinh viên)</li>
+            <li>Người ăn kiêng hoặc luyện tập thể thao (gymers)</li>
+            <li>Gia đình trẻ</li>
+            <li>Người theo chế độ ăn đặc biệt (chay, keto, eat clean, v.v.)</li>
+        </ul>
+        <table id="part3"></table>
+        <h2><li>Tính năng chi tiết (MVP - Phiên bản đầu):</li></h2>
+        <table>
+            <tr>
+                <th>Tính năng</th>
+                <th>Mô tả cụ thể</th>
+            </tr>
+            <tr>
+                <td>👤 Hồ sơ người dùng</td>
+                <td>Đăng ký/đăng nhập (email, Google), lưu thông tin sức khỏe, mục tiêu ăn uống.</td>
+            </tr>
+            <tr>
+                <td>🧠 Gợi ý thực đơn AI</td>
+                <td>Gợi ý bữa ăn hàng ngày/tuần dựa trên khẩu vị, mục tiêu dinh dưỡng, chi phí, tần suất nấu.</td>
+            </tr>
+            <tr>
+                <td>📊 Theo dõi dinh dưỡng</td>
+                <td>Thống kê calo, protein, carb, fat theo từng bữa ăn và theo tuần.</td>
+            </tr>
+            <tr>
+                <td>🛒 Danh sách mua sắm</td>
+                <td>Tự động tạo danh sách nguyên liệu, gom nhóm, chia theo loại (rau, thịt, gia vị…).</td>
+            </tr>
+            <tr>
+                <td>📦 Gợi ý đặt hàng</td>
+                <td>Tích hợp API từ các sàn như ShopeeFood, Chopp.vn, Bách Hoá Xanh...</td>
+            </tr>
+            <tr>
+                <td>🧊 "Tủ lạnh ảo"</td>
+                <td>Nhập nguyên liệu đang có -> gợi ý món ăn phù hợp.</td>
+            </tr>
+            <tr>
+                <td>🔄 Lưu & chia sẻ thực đơn</td>
+                <td>Lưu công thức, xuất PDF, chia sẻ lên mạng xã hội.</td>
+            </tr>
+        </table>
+        <table id="part4"></table>
+        <h2><li>Thông số kỹ thuật & công nghệ đề xuất:</li></h2>
+        <table>
+            <tr>
+                <th>Thành phần</th>
+                <th>Công nghệ đề xuất</th>
+            </tr>
+            <tr>
+                <td>Frontend (Giao diện)</td>
+                <td>React.js + TailwindCSS</td>
+            </tr>
+            <tr>
+                <td>Backend (Xử lý logic)</td>
+                <td>Node.js + Express.js</td>
+            </tr>
+            <tr>
+                <td>AI Gợi ý món ăn</td>
+                <td>OpenAI API (GPT-4) hoặc mô hình nội bộ huấn luyện trên dữ liệu món ăn</td>
+            </tr>
+            <tr>
+                <td>Cơ sở dữ liệu</td>
+                <td>PostgreSQL hoặc MongoDB</td>
+            </tr>
+            <tr>
+                <td>Xác thực người dùng</td>
+                <td>Firebase Auth hoặc OAuth (Google, Facebook)</td>
+            </tr>
+            <tr>
+                <td>Tìm kiếm món ăn</td>
+                <td>ElasticSearch hoặc Algolia</td>
+            </tr>
+            <tr>
+                <td>Triển khai (Deployment)</td>
+                <td>Vercel / Netlify cho frontend, Railway / Render / AWS cho backend</td>
+            </tr>
+            <tr>
+                <td>Tích hợp bên thứ 3</td>
+                <td>Shopee API, ZaloPay/MoMo API, Open Food Facts API</td>
+            </tr>
+        </table>
+        <table id="part5"></table>
+        <h2><li>Chi phí triển khai MVP (ước tính 3 tháng):</li></h2>
+        <table>
+            <tr>
+                <th>Hạng mục</th>
+                <th>Chi phí ước tính</th>
+            </tr>
+            <tr>
+                <td>Tên miền + hosting</td>
+                <td>~$10-15/tháng</td>
+            </tr>
+            <tr>
+                <td>API GPT (nếu dùng)</td>
+                <td>~$50-100/tháng tùy tần suất</td>
+            </tr>
+            <tr>
+                <td>Lập trình (freelancer/team)</td>
+                <td>~$3,000 – $6,000 cho MVP</td>
+            </tr>
+            <tr>
+                <td>Thiết kế UI/UX	</td>
+                <td>~$500 – $1,000</td>
+            </tr>
+            <tr>
+                <td>Quảng bá ban đầu (ads)</td>
+                <td>~$300 – $1,000</td>
+            </tr>
+        </table>
+        <p>Tổng chi phí MVP: ~$4,000 – $8,000 nếu thuê ngoài. Tự làm thì gần như chỉ tốn hosting + tên miền</p>
+        <table id="part6"></table>
+        <h2><li>Lộ trình phát triển (Timeline 3 tháng):</li></h2>
+        <table>
+            <tr>
+                <th>Tuần</th>
+                <th>Công việc chính</th>
+            </tr>
+            <tr>
+                <td>1-2</td>
+                <td>Khảo sát người dùng, thiết kế wireframe, mockup</td>
+            </tr>
+            <tr>
+                <td>3-4</td>
+                <td>Xây dựng backend (API, dữ liệu món ăn)</td>
+            </tr>
+            <tr>
+                <td>5-6</td>
+                <td>Xây dựng frontend, đăng ký người dùng</td>
+            </tr>
+            <tr>
+                <td>7-8</td>
+                <td>Tích hợp AI gợi ý thực đơn, tính toán dinh dưỡng</td>
+            </tr>
+            <tr>
+                <td>9-10</td>
+                <td>Danh sách mua hàng + gợi ý đặt hàng</td>
+            </tr>
+            <tr>
+                <td>11-12</td>
+                <td>Tối ưu, kiểm thử và ra mắt bản beta</td>
+            </tr>
+        </table>
+        <table id="part7"></table>
+        <h2><li>Chiến lược phát triển lâu dài:</li></h2>
+        <ul style="list-style: disc;">
+            <li>Phát triển app mobile (flutter / React Native)</li>
+            <li>Cho phép người dùng đóng góp công thức và đánh giá</li>
+            <li>Gói Premium: gợi ý bữa ăn cá nhân hóa cao cấp, meal prep chuyên sâu, lên kế hoạch dinh dưỡng theo tuần/tháng</li>
+            <li>Kết nối với các thiết bị smart kitchen hoặc smart fridge</li>
+        </ul>
+    </ol>
+    <p style="text-align: center;"><a href="#trangchu">Quay lại đầu trang</a></p>
+</body>
+</html>
